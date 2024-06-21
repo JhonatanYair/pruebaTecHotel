@@ -7,7 +7,7 @@ services:
       - ./:/app:delegated
     ports:
       - '8089:80'
-  mysqldb:
+  mariadb:
     image: mariadb:10
     restart: always
     environment:
